@@ -7,7 +7,16 @@
             Início
           </a>
         </li>
-       
+        @foreach($menus as $menu )
+          
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="{{$menu['rota']}}">
+            <i class="{{$menu['icone']}}"></i>
+            {{$menu['titulo']}}
+          </a>
+        </li>
+     
+        @endforeach
       </ul>
     </div>
   </nav>

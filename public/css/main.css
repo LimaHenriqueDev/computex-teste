@@ -11,6 +11,10 @@ body {
     height: 16px;
     vertical-align: text-bottom;
   }
+
+  .navbar {
+    background: #0000ff !important;
+  }
   
   /*
    * Sidebar
@@ -23,6 +27,7 @@ body {
     right: 0;
     */
     bottom: 0;
+    font-family: 'Roboto Condensed', sans-serif;
     /* rtl:remove */
     left: 0;
     z-index: 100; /* Behind the navbar */

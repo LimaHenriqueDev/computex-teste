@@ -7,6 +7,10 @@ body {
     height: 16px;
     vertical-align: text-bottom;
   }
+
+  .navbar{
+    background: #0000ff;
+  }
   
   /*
    * Sidebar
