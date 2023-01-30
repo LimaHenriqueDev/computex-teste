@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\HorarioController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\SidebarController;
+use App\Http\Controllers\TurmasController;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
@@ -15,7 +19,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+
+
+Route::get('/', [HomeController::class,'index']);
+Route::get('/horario', [HorarioController::class,'horario']);
+Route::get('/turmas', [TurmasController::class,'turmas']);
+Route::get('/alunos', [TurmasController::class,'alunosTurma']);
+Route::get('/alunos/pdf', [TurmasController::class,'baixarListaDeAlunosEmPdf']);
+
+
+
 
