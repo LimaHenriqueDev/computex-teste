@@ -94,8 +94,8 @@ class ComputexApi
     public function buscaAlunoPorTurma($params)
     {
 
-        $response = Http::get($this->baseUrl . "ws_controller.php?action=getAlunosTurma&ano=".$params['ano']."&escola=".$params['escola']."&grau_serie=".$params['grau_serie']."&turno=".$params['turno']."&turma=".$params['turma']."&status=C")->json();
-        
+        $response = Http::get($this->baseUrl . "ws_controller.php?action=getAlunosTurma&ano=" . $params['ano'] . "&escola=" . $params['escola'] . "&grau_serie=" . $params['grau_serie'] . "&turno=" . $params['turno'] . "&turma=" . $params['turma'] . "&status=C")->json();
+
         return $response;
     }
 
@@ -104,7 +104,23 @@ class ComputexApi
     {
         $icones = [
             35 => 'far fa-clock',
-            36 => 'fas fa-user-graduate'
+            36 => 'fas fa-user-graduate',
+            37 => 'fas fa-calendar-alt',
+            29 => 'fas fa-comment-dots',
+            49 => 'fab fa-rocketchat',
+            27 => 'fas fa-image',
+            '04' => 'fas fa-file-invoice-dollar',
+            30 => 'fas fa-file',
+            '03' => 'fas fa-id-card',
+            '08' => 'fas fa-exclamation',
+            10 =>'fas fa-book-open',
+            28 => 'fas fa-arrow-alt-circle-right',
+            32 => 'fas fa-wallet',
+            80 => 'far fa-comment-dots',
+            26 => 'far fa-list-alt', 
+            81 => 'fas fa-graduation-cap',
+            '02' => 'fas fa-database',
+            '01' => 'fas fa-key'
         ];
 
         if (!array_key_exists($opcao, $icones)) {

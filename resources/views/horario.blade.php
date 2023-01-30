@@ -1,6 +1,6 @@
 @extends('index')
-@section('title', 'Horario')
-@section('H1', 'Horário')
+@section('title', 'Horários')
+@section('H1', 'Horários')
 @section('content')
 
     <div class="container d-flex justify-content-center">

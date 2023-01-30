@@ -54,9 +54,8 @@
 
                         </td>
                         <td>
-                           <a href={{"/alunos?ano={$turma['ano']}&escola={$turma['codigo_escola']}&grau_serie={$turma['grau_serie']}&turno={$turma['turno']}&turma={$turma['turma']}&status=C"}}>  Ver alunos </a> 
-                           <a href={{"/alunos/pdf?ano={$turma['ano']}&escola={$turma['codigo_escola']}&grau_serie={$turma['grau_serie']}&turno={$turma['turno']}&turma={$turma['turma']}&status=C"}}>  Baixar alunos </a> 
-
+                           <a type="button" class="btn btn-primary" href={{"/alunos?ano={$turma['ano']}&escola={$turma['codigo_escola']}&grau_serie={$turma['grau_serie']}&turno={$turma['turno']}&turma={$turma['turma']}&status=C"}}>  Ver alunos </a> 
+                           <a type="button" class="btn btn-secondary" href={{"/alunos/pdf?ano={$turma['ano']}&escola={$turma['codigo_escola']}&grau_serie={$turma['grau_serie']}&turno={$turma['turno']}&turma={$turma['turma']}&status=C"}}>  Baixar alunos </a> 
                         </td>
 
                     </tr>
