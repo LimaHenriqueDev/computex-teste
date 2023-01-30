@@ -15,7 +15,6 @@
             {{$menu['titulo']}}
           </a>
         </li>
-     
         @endforeach
       </ul>
     </div>

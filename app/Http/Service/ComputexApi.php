@@ -13,14 +13,12 @@ class ComputexApi
         $this->baseUrl = "http://camerascomputex.ddns.net:8080/escola/";
     }
 
-
     public function buscarMenus()
     {
         $response = Http
             ::get($this->baseUrl . 'mobile_login.php?matricula=2011004&senha=99999999&token=X&so=ios')
             ->json();
         $menus = $response['menu'];
-        // dd($menus);
         $menus = array_map(function ($menu) {
             return [
                 'titulo' => $menu['titulo'],
@@ -37,7 +35,6 @@ class ComputexApi
         $response = Http::get($this->baseUrl .  'json_horario_aluno.php?matricula=2011004&senha=99999999&ano=20211')
             ->json();
         $horarios = $response['horario'];
-        //   dd($horarios);
 
         $horarios = array_map(function ($horario) {
             return [
@@ -54,7 +51,6 @@ class ComputexApi
     {
         $response = Http::get($this->baseUrl . 'ws_controller.php?action=getTurmas&ano=20211')
             ->json();
-        // dd($response);
         $turmas = $response;
 
         $turmas = array_map(function ($turma) {

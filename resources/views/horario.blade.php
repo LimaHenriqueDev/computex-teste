@@ -5,7 +5,6 @@
 
     <div class="container d-flex justify-content-center">
         <table class="table table-striped text-center table-bordered">
-
             <thead>
                 <tr>
                     @foreach ($horarios as $horario)
@@ -26,22 +25,14 @@
                                         {{ $aula['professor'] }}
                                     </div>
                                 </div>
-
                                 @if (count($horario['horarios']) - 1 !== $key)
                                     <hr />
                                 @endif
                             @endforeach
-
                         </td>
                     @endforeach
-
                 </tr>
             </tbody>
-
         </table>
-
     </div>
-
-
-
 @endsection
